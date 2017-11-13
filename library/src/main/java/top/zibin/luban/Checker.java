@@ -13,6 +13,7 @@ class Checker {
   private static final String PNG = "png";
   private static final String WEBP = "webp";
   private static final String GIF = "gif";
+  private static final String BIMJPEG="bimjpeg";
 
   static {
     format.add(JPG);
@@ -20,6 +21,7 @@ class Checker {
     format.add(PNG);
     format.add(WEBP);
     format.add(GIF);
+    format.add(BIMJPEG);
   }
 
   static boolean isImage(String path) {
