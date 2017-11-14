@@ -1,13 +1,13 @@
 # Luban
 
-[![Build Status](https://travis-ci.org/Curzibn/Luban.svg?branch=master)](https://travis-ci.org/Curzibn/Luban)
-[ ![Download](https://api.bintray.com/packages/curzibn/maven/Luban/images/download.svg) ](https://bintray.com/curzibn/maven/Luban/_latestVersion)
-
 <div align="right">
 <a href="Translation/README-EN.md">:book: English Documentation</a>
 </div>
 
 `Luban`（鲁班） —— `Android`图片压缩工具，仿微信朋友圈压缩策略。
+
+默认支持五种图片格式，其他格式无法转换。但在项目中存在自定义文件后缀的场景，这里新增了一个接口用于指定源文件的格式类型。
+
 
 # 项目描述
 
@@ -32,7 +32,17 @@
 # 导入
 
 ```sh
-compile 'top.zibin:Luban:1.1.3'
+1、在项目的build.gradle文件中添加：
+    allprojects {
+             repositories {
+                 ...
+                 maven { url 'https://jitpack.io' }
+             }
+         }
+2、添加依赖：
+    dependencies {
+       compile 'com.github.panweiwork:Luban:1.1.4'
+    }
 ```
 
 # 使用
