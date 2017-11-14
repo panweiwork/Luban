@@ -20,8 +20,8 @@ class Engine {
   private int srcWidth;
   private int srcHeight;
 
-  Engine(String srcImg, File tagImg) throws IOException {
-    if (Checker.isJPG(srcImg)) {
+  Engine(String srcImg, File tagImg,boolean isJPG) throws IOException {
+    if (isJPG) {
       this.srcExif = new ExifInterface(srcImg);
     }
     this.tagImg = tagImg;
