@@ -54,7 +54,7 @@
 ```java
 Luban.with(this)
         .load(photos)                                   // 传人要压缩的图片列表
-     ** .setSourceFormat(FormatInterface.JPEG)          //指定源文件格式类型**
+        .setSourceFormat(FormatInterface.JPEG)          //指定源文件格式类型
         .ignoreBy(100)                                  // 忽略不压缩图片的大小
         .setTargetDir(getPath())                        // 设置压缩后文件存储位置
         .setCompressListener(new OnCompressListener() { //设置回调
